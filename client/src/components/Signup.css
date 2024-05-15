@@ -1,0 +1,123 @@
+body{
+  background-color: #141111;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    width: 800px; 
+    height: 500px; 
+    margin: 0 auto;
+  }
+  
+
+  .outer-container {
+    display: flex; 
+    flex-grow: 1;
+  }
+  
+  
+  .inner-container {
+    flex: 0 0 50%; 
+    /* background-image: url('https://media.istockphoto.com/id/1430286027/photo/information-technology-businessman-working-on-computer-in-office-for-digital-app-software.webp?b=1&s=170667a&w=0&k=20&c=YFwXXbAFfDtX7-2iNcbH6N-ttS3CcnMt7rlUlwIXZ2g='); */
+    background-image: url("https://media.istockphoto.com/id/1496160438/photo/web-browser-login-page-username-and-password-entry-3d-illustration.webp?b=1&s=170667a&w=0&k=20&c=d6HdhAZLkpwgnf9DWSXNHB1c37XpKwJBFCC5yjHZMzA=");
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 20px;
+  }
+  
+  
+  .form {
+    flex: 1;
+    padding: 50px
+  }
+  
+  .title {
+    text-align: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+  }
+  
+
+  input[type="text"],
+  input[type="email"],
+  input[type='role'],
+  input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    background-color: #fff; 
+  }
+  
+  
+  .button {
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db; 
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-top: 20px;
+  }
+  
+ 
+  .button:hover {
+    background-color: #2980b9; 
+  }
+  
+  
+  .error-message {
+    color: red; 
+    margin-bottom: 10px; 
+  }
+  
+  
+  .login-par {
+    text-align: center;
+    margin-top: 20px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+ 
+  .login-button {
+    border: none; 
+    background-color: transparent; 
+    color: #3498db;
+    cursor: pointer; 
+    font-size: large;
+  }
+  
+  
+  .login-button:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button:active {
+    color: #3e8e41;
+  }
+  
+  
+  .login-button:focus {
+    outline: none;
+  }
+
+  .role {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    background-color: #fff;
+  }
+  

@@ -1,0 +1,16 @@
+.price-container{
+    text-align: center;
+}
+
+.price-h1{
+    font-size: 46px;
+    color: #000;
+}
+
+.price-par{
+    font-size: 20px;
+    color: #000;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: -20px;
+}

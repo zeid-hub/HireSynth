@@ -1,0 +1,78 @@
+   .awards-container {
+    padding: 50px 0;
+    background-color: #122947;
+    margin-top: 5rem;
+  }
+  
+  .award-first-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #122947;
+  }
+  
+  .award-first-container h4 {
+    font-size: 46px;
+    color: #fff;
+    background-color: #122947;
+    margin-top: -20px;
+  }
+  
+  .award-first-container p {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 30px;
+    background-color: #122947;
+    margin-top: -25px;
+  }
+  
+  .award-content-grid4-mtop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: #122947;
+  }
+  
+  .award-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #122947;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(248, 246, 246, 0.952);
+  }
+  
+  .award-icon {
+    /* font-size: 2rem; */
+    /* margin-bottom: 20px; */
+    background-color: #122947;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4% 50%;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  
+  .award-icon span {
+    color: #000; /* You can adjust the color as needed */
+    /* background-color: black; */
+  }
+  
+  .award-box h1 {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #122947;
+  }
+  
+  .award-box p {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #122947;
+  }
+  

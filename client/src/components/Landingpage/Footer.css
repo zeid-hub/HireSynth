@@ -1,0 +1,149 @@
+.class-footer-container {
+  /* margin-top: 1rem; */
+  background-color: #333;
+  color: #fff;
+  height: 530px;
+}
+
+.footer-Contact {
+  margin-bottom: 30px;
+  background-color: #3498db;
+}
+
+.send-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #099c29;
+  height: 150px;
+}
+
+.text {
+  flex: 1;
+  background-color: #099c29;
+}
+
+.text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-color: #099c29;
+  font-size: 50px;
+}
+
+.text p {
+  font-size: 1rem;
+  background-color: #099c29;
+  font-weight: 500px;
+}
+
+.btn5 {
+  margin-right: 50px;
+  padding: 10px 20px ;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  color: green;
+  cursor: pointer;
+  &:hover {
+    background-color: #3498db;
+  }
+  font-size: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  margin-top: 50px;
+}
+
+.box {
+  margin-right: 20px;
+  background-color: #333;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #333;
+}
+
+.box p {
+  font-size: 1rem;
+  background-color: #333;
+}
+
+.input-flex {
+  margin-top: 20px;
+  justify-content: space-between;
+  background-color: #333;
+}
+
+.input-flex input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-flex button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.legal {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 10px;
+  background-color: #333;
+  height: 50px;
+  align-content: center;
+}
+
+.legal-1 {
+  color: #ccc;
+  background-color: #333;
+}
+
+.unordered{
+  background-color: #333;
+  list-style-type: none;
+}
+.ordered {
+  background-color: #333;
+  margin-bottom: 20px;
+}
+.box h3 {
+  background-color: #333;
+}
+
+.footer-text{
+  background-color: #333;
+}
+
+.footer-text button{
+  background-color: #3498db;
+  border-radius: 15px;
+  margin-top: 10px;
+  &:hover {
+    background-color: #0fe43d;
+  }
+}
+
+.title-text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 50px;
+}
+
+.my-image-footer{
+  margin-top: -50px;
+  height: 130px;
+  /* height: auto; */
+  width: 200px;
+  font-size: 60px;
+}

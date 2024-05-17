@@ -1,0 +1,30 @@
+.demo {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .demo h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .demo p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  

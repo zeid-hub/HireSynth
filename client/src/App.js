@@ -3,6 +3,7 @@ import "./App.css"
 import React from 'react'
 import Navbar from './components/NavBar';
 import ProDuct from './components/ProDuct';
+import Demo from './components/Demo';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Navbar/>
       <Routes>
                 <Route path="/questtrail" element={<ProDuct />} />
+                <Route path="/get a demo" element={<Demo />} />
       </Routes>
     </div>
   );

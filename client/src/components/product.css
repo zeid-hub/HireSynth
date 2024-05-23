@@ -238,3 +238,31 @@
   height: 400px;
 }
 
+.demo-button-container {
+  text-align: center;
+  margin-top: 00px;
+}
+
+.bb-button {
+  display: inline-block;
+  padding: 10px 2cap;
+  background-color: hsl(233, 83%, 43%);
+  color: #e9e9f0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.bb-button:hover {
+  background-color: #070709;
+}
+
+@media (min-width: 600px) {
+  .bb-button {
+    width: 200px;
+  }
+}
+

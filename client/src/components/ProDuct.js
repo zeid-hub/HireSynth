@@ -3,6 +3,11 @@ import React from 'react';
 import './product.css';
 
 function ProDuct() {
+  const handleDemoButtonClick = () => {
+    // Handle the demo button click event here
+    console.log('Demo button clicked');
+  };
+
   return (
     <div>
       <div className="header">
@@ -83,16 +88,15 @@ function ProDuct() {
         </div>
       </div>    
 
-      <div class="board">
-  <div class="text">
-    <h2><span class="blue-text">Whiteboard Process Submission:</span></h2>
-    <p>Interviewees can submit a full whiteboard process, including writing BDD, pseudocode, and code, as part of their assessment.</p>
-  </div>
-  <div class="image-board">
-    <img src="whiteboard.png" alt="Smart Recruiter" />
-  </div>
-</div>
-
+      <div className="board">
+        <div className="text">
+          <h2><span className="blue-text">Whiteboard Process Submission:</span></h2>
+          <p>Interviewees can submit a full whiteboard process, including writing BDD, pseudocode, and code, as part of their assessment.</p>
+        </div>
+        <div className="image-board">
+          <img src="whiteboard.png" alt="Whiteboard Process Submission" />
+        </div>
+      </div>
 
       <div className="card-container">
         <div className="card">
@@ -103,15 +107,22 @@ function ProDuct() {
         <div className="card">
           <h2><span className="blue-text">User-Friendly Interface:</span></h2>
           <p>Our platform features a user-friendly interface built with ReactJS for the frontend, ensuring a seamless experience for users.</p>
-
         </div>
 
         <div className="card">
           <h2><span className="blue-text">Scalability and Performance:</span></h2>
           <p>Powered by Python (Flask) for the backend, our platform offers scalability and performance to handle large-scale assessments efficiently.</p>
-          
         </div>
       </div>
+
+      {/* <div className="header">
+        <h3>See Hiresynth in Action</h3>
+        <h1>Get a Live Demonstration</h1>
+      </div>
+
+      <div className="demo-button-container">
+        <button className="bb-button" onClick={handleDemoButtonClick}>Book a Demo</button>
+      </div> */}
       
       {/* <Link to="/signup">
         <button>Sign Up Now</button>

@@ -1,46 +1,33 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import Product from "./ProDuct"; 
-import "./Navbar.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 function NavBar() {
-  const [isProductOpen, setIsProductOpen] = useState(false);
-
-  // Function to toggle Product visibility
-  const toggleProduct = () => {
-    setIsProductOpen(!isProductOpen);
-  };
-
   return (
     <nav className="nav">
+      <div className="logo">Hiresynth</div>
       <ul className="nav-menu">
         <li>
           <NavLink exact to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink exact to="/about us">About Us</NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
         </li>
         <li>
-        <NavLink exact to="/questtrail">Quest Trail</NavLink>
-          {/* <NavLink exact to="/our product" onClick={toggleProduct}>
-            Product
-          </NavLink> */}
+          <NavLink to="/questtrail">Quest Trail</NavLink>
         </li>
+        {/* <li>
+          <NavLink to="/assessments">Assessments</NavLink>
+        </li> */}
         <li>
-          <NavLink exact to="/assessments">Assessments</NavLink>
-        </li>
-
-        <li>
-          <NavLink exact to="/signup">Sign Up</NavLink>
+          <NavLink to="/signup">Sign Up</NavLink>
         </li>
       </ul>
       <div className="nav-buttons">
-        <button className="blue-button demo-button">
-          Get a Demo
-        </button>
+        <NavLink className="blue-button demo-button" to="/demo">
+          Demo
+        </NavLink>
       </div>
-    
-      {isProductOpen && <Product />}
     </nav>
   );
 }

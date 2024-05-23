@@ -1,0 +1,36 @@
+.get-demo-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .get-demo-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+  
+  .get-demo-section p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+  
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+    margin: 0 auto; /* Center the video container */
+    max-width: 640px; /* Adjust to your preference */
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  

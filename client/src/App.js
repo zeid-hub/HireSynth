@@ -5,13 +5,16 @@ import Navbar from './components/NavBar';
 import ProDuct from './components/ProDuct';
 import Demo from './components/Demo';
 
+
 function App() {
   return (
     <div className="App">
     <Navbar/>
       <Routes>
                 <Route path="/questtrail" element={<ProDuct />} />
-                <Route path="/get a demo" element={<Demo />} />
+                <Route path="/demo" element={<Demo />} />
+                
+                
       </Routes>
     </div>
   );

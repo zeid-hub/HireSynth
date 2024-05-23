@@ -8,12 +8,10 @@ import Demo from './components/Demo';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+     <Navbar />
       <Routes>
                 <Route path="/questtrail" element={<ProDuct />} />
-                <Route path="/demo" element={<Demo />} />
-                
-                
+                <Route path="/Get a Demo" element={<Demo />} />
       </Routes>
     </div>
   );

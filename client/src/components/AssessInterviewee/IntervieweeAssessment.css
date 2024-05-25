@@ -1,0 +1,157 @@
+  .interviewee-container {
+    display: flex;
+    margin-top: 67px;
+    max-height: 100%;
+  }
+
+  .the-content {
+    flex: 1;
+  }
+  
+  .interviewee-main-container {
+    padding: 20px;
+  }
+  
+  .interviewee-h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .interviewee-filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .interviewee-language, .time-complexity {
+    cursor: pointer;
+    font-size: 28px;
+    border: 1px solid #131111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(238, 2, 2, 0.1);
+  }
+  
+  .filter-indicator {
+    margin-left: 8px;
+    background: transparent;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    z-index: 1;
+    font-size: 20px;
+    background: transparent;
+    margin-left: 450px;
+    border-radius: 20px;
+    margin-top: -100px;
+  }
+  
+  .dropdown-content.show {
+    display: block;
+  }
+  
+  .language-item, .complexity-item {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #fbfcfd;
+  }
+  
+  .language-item:hover, .complexity-item:hover {
+    background-color: #04bd13;
+  }
+  
+  .language-item.active, .complexity-item.active {
+    background-color: #eaeaea;
+  }
+  
+  .my-assessment-card {
+    margin-top: 20px;
+  }
+  
+  .question-card {
+    background-color: #fff;
+    border: 1px solid #669261;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #000;
+  }
+
+  .the-language-section{
+    background: transparent;
+  }
+  
+  .view-button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 40px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: 90px;
+    font-size: 20px;
+  }
+
+  .attempt-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 40px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 500px;
+  }
+  
+  .view-button:hover, .attempt-button:hover {
+    background-color: #04bd13;
+  }
+  
+  .question-details {
+    margin-top: 10px;
+  }
+  
+  .fetched-question {
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #000;
+  }
+  
+  .past-assessment-h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .button-upgrade{
+    position: fixed;
+    top: 90px;
+    right: 100px; 
+    font-size: 23px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #007bff;
+  }
+
+  .button-upgrade:hover{
+    color: #04bd13;
+    text-decoration: solid;
+  }
+  

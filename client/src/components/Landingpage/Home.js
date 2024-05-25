@@ -4,7 +4,7 @@ import Intro from "./Intro";
 import Footer from "./Footer";
 import Awards from "./Award";
 import Recruiters from "./Recruiters";
-import Price from "./Price";
+// import Price from "./Price";
 import Companies from "./Companies";
 import Hero from "./Hero";
 
@@ -16,7 +16,7 @@ function Home () {
         <Recruiters/>
         <Companies/>
         <Awards/>
-        <Price/>
+        {/* <Price/> */}
         <Footer/>
         </div>
     )

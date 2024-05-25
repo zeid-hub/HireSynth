@@ -1,8 +1,6 @@
 import React from "react";
 import "./Footer.css"
-// import Logo from '../../Images/logo.png';
-
-import Logo from '../Images/logo.png'
+import Logo from "../Images/Icon.jpeg"
 
 function Footer (){
 
@@ -39,7 +37,7 @@ function Footer (){
                 <h2>Do You Need Help With Anything?</h2>
                 <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p><div className='input-flex'>
                 <form className="footer-text">
-                  <input type='text' placeholder='Email Address' />
+                  <input type='text' placeholder='Email Address' className="footer-email"/>
                   <button className="form-button">Subscribe</button>
                 </form>
             </div>
@@ -57,7 +55,7 @@ function Footer (){
             ))}
         </div>
         <div className='legal'>
-          <h1 className="legal-1">© 2024 HireSynth. Designd By Group2.</h1>
+          <h1 className="legal-1">© 2024 HireSynth</h1>
         </div>
     </div>
     )

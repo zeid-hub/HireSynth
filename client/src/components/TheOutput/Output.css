@@ -1,0 +1,50 @@
+.output-container {
+    width: 50%;
+    background-color: #2e2a2a;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+  }
+  .run-button {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 40px;
+    background-color: #2e2a2a;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .run-button:hover{
+    background-color: #dbcece;
+  }
+
+  .output-box {
+    height: 84vh;
+    padding: 8px;
+    overflow-y: auto;
+    border-radius: 40px;
+    background-color: #2e2a2a;
+  }
+  
+  .output-box.error {
+    border: 1px solid #ff0000;
+  }
+  
+  .output-box.error p {
+    color: #ff0000;
+  }
+  
+  .output-par{
+    background: transparent;
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .my-value{
+    color: #fff;
+    background: transparent;
+  }

@@ -1,38 +1,7 @@
-/* .hero-container {
-    text-align: center;
-  }
-  
-  .App-header {
-    background-image: url('https://ldbw6b.webwave.dev/files/dynamicContent/sites/ldbw6b/images/en/webpage_46/lw1v6erm/element_3927/rwdMode_1/2400x700/unsplash-image.webp');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    filter: blur(1px); 
-  }
-  
-  .hero-h1 {
-    font-size: 5rem;
-    color: #fff;
-    background: transparent;
-  }
-  
-  .hero-h3 {
-    font-size: 3rem;
-    background: transparent;
-    color: #fff;
-  }
-   */
-
-
-
-
    .hero-container {
     text-align: center;
-    position: relative; /* Add position relative */
+    position: relative;
+    margin-top: 66px;
   }
   
   .App-header {

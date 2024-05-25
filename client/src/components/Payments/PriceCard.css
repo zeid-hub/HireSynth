@@ -1,0 +1,113 @@
+   .pricecard-outer-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .content-flex-mtop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .box-shadow {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    width: 300px;
+  }
+  
+  .topbtn {
+    text-align: center;
+  }
+  
+  .btn3 {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .pcar-h3 {
+    text-align: center;
+    margin-top: 10px;
+    font: 1em sans-serif;
+    font-size: 30px;
+  }
+  
+  .pcar-h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 46px;
+    color: #27ae60;
+  }
+  
+  .pcar-span {
+    font-size: 46px;
+    margin-right: 5px;
+  }
+  
+  .pcar-par {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .pcar-ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .pcar-li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .pcar-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .pr-cd-par {
+    margin: 0;
+  }
+  
+  .pcar-btn5 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 26px;
+    transition: all 0.3s ease;
+    max-width: 240px;
+    transition: background-color 0.5s ease;
+  }
+  .pcar-btn5:hover {
+    filter: brightness(70%);
+  }
+
+.pcar-btn5:last-child:hover {
+  background-color: #1a9046;
+  color: #fff;
+}
+
+.pcar-btn5:nth-child(2) {
+  background-color: #27ae60;
+  color: #fff;
+}
+  

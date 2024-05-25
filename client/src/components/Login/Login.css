@@ -1,0 +1,123 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 68px;
+}
+
+.login-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.div-picture-login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-login-form {
+  margin-right: 20px;
+  height: 420px;
+  width: 500px;
+  margin-top: 30px;
+  padding: 10px;
+  line-height: 20px;
+  border: 1px solid #8a8383;
+  border-radius: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+}
+
+.login-label{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.email,
+.password,
+.role {
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 450px;
+  height: 30px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.login-button {
+  width: 100px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+.login-button:hover {
+  background-color: #1db33e;
+}
+
+.signup-par {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 120px;
+}
+
+.lg-signup-button {
+  background: none;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.lg-signup-button:hover {
+  text-decoration: underline;
+  color: #1db33e;
+}
+
+.lg-signup-button:active {
+  color: #3e8e41;
+}
+
+
+.lg-sinup-button:focus {
+  outline: none;
+}
+
+.login-image {
+  width: 500px; 
+  height: 450px;
+  background-image: url('https://media.istockphoto.com/id/1496160438/photo/web-browser-login-page-username-and-password-entry-3d-illustration.webp?b=1&s=170667a&w=0&k=20&c=d6HdhAZLkpwgnf9DWSXNHB1c37XpKwJBFCC5yjHZMzA='); /* Replace 'path_to_your_image' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.login-icon{
+  margin-right: 10px;
+}
+
+.role-label{
+  margin-top: 10px;
+  height: 45px;
+  border-radius: 30px;
+  width: 470px;
+}

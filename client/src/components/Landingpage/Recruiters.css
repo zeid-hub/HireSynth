@@ -31,7 +31,8 @@
   }
   
   .recruiter-box {
-    background: #ffffff;
+    /* background: #ffffff; */
+    background-color: #faebeb;
     border-radius: 6px;
     border: 1px solid rgba(62, 28, 131, 0.1);
     padding: 2rem;
@@ -42,7 +43,6 @@
   }
   
   .recruiter-box:hover {
-    /* box-shadow: 0 0 20px 0 rgba(50, 111, 226, 0.18); */
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(3, 253, 3, 0.973);
   }
@@ -61,19 +61,20 @@
   .re-details {
     text-align: center;
     margin-top: 30px;
-    /* max-width: fit-content; */
     height: 400px;
+    background-color: #faebeb;
   }
   
   .re-img {
-    width: 120px;
+    width: 300px;
     height: 120px;
     margin: auto;
     position: relative;
+    margin-left: 50px;
   }
   
   .rec-image {
-    width: 250px;
+    width: 350px;
     height: 200px;
     border-radius: 15px;
     margin-top: -30px;
@@ -89,37 +90,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 123px;
+    margin-left: -50px;
   }
-/*   
-  .re-img::after {
-    content: "";
-    position: absolute;
-    top: -65px;
-    left: -45px;
-    right: -45px;
-    width: 200px;
-    height: 150px;
-    border: 5px solid #edf0f5;
-    border-radius: 6px; 
-  }
-   */
+
   .rec-label {
     display: inline-block;
     margin-top: 86px;
     color: #333;
     width: fit-content;
     font-size: small;
+    background-color: #faebeb;
   }
   
   .location-icon {
     color: #0fe43d;
     margin-right: 8px;
+    background-color: #faebeb;
   }
   
   .rec-h4 {
     color: #000;
     margin-bottom: 2px;
     margin-top: 10px;
+    background-color: #faebeb;
   }
   
   .rec-ul {
@@ -127,6 +120,7 @@
     margin-top: 10px;
     padding: 0;
     list-style-type: none;
+    background-color: #faebeb;
   }
   
   .rec-li {
@@ -135,16 +129,18 @@
     height: 40px;
     line-height: 40px;
     align-items: center;
-    background-color: #f4f5f7;
+    /* background-color: #f4f5f7; */
     border-radius: 50%;
     margin: 5px;
     color: #333;
+    background-color: #faebeb;
   }
   
   .re-button-flex {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    background-color: #faebeb;
   }
   
   .rec-button {

@@ -1,0 +1,47 @@
+.dashboard-summary {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .summary-item {
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    height: 370px;
+    margin-top: -30px;
+  }
+
+  .h3-par{
+    background-color: rgb(28, 211, 37);
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    padding: 10px;
+  }
+  
+  .dashboard-h3 {
+    font-size: 20px;
+    color: #000;
+    margin-left: 55px;
+    height: 60px;
+    margin-top: 19px;
+  }
+  
+  .dashboard-par {
+    font-size: 35px;
+    color: #000;
+    margin-left: 120px;
+    margin-top: -50px;
+  }
+  
+  .chart {
+    margin-top: 70px;
+    max-width: 290px;
+    min-height: 240px; 
+    margin-top: 20px;
+}

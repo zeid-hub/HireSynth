@@ -26,6 +26,7 @@ function CodeEditor() {
 
     return () => clearTimeout(timer);
   }, []);
+  
 
   const handleSubmit = async () => {
     console.log("Submitted code:", code);
@@ -34,14 +35,40 @@ function CodeEditor() {
     const timeTakenInSeconds = (endTime - startTime) / 1000;
     console.log("Time taken:", timeTakenInSeconds, "seconds");
     setIsTimerRunning(false);
-
+  
     try {
       const { run: result } = await executeCode(language, code);
       setOutput(result.output.split("\n"));
+  
+      // Console log the output
+      console.log("Code Output:", result.output);
+  
+      // Make a POST request to save the code execution data
+      const postData = {
+        user_code: code,
+        code_output: result.output, // Include the code output
+        language,
+        timer: new Date(startTime).toISOString() // Convert startTime to ISO string format
+      };
+  
+      const response = await fetch('/code_execution', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postData)
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to save code execution data');
+      }
+  
+      console.log('Code execution data saved successfully');
     } catch (error) {
       console.error("Error executing code:", error);
     }
   };
+  
 
   return (
     <div className="main-code-mirror-container">

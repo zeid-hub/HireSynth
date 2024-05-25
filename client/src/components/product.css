@@ -1,0 +1,240 @@
+/* Header styles */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.blue-text {
+  color: #007bff; /* blue text color */
+}
+
+.text-container {
+  margin-top: 20px;
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #333; /* dark gray text color */
+}
+
+/* Content styles */
+.content {
+  margin-top: 10px;
+}
+
+.head-image {
+  text-align: center;
+}
+
+.head-image img {
+  width: 1;
+  height: 400px; /* adjust image height as needed */
+
+}
+
+.feature1 h2 {
+  font-size: 1.3em;
+  margin-top: 80;
+  margin-bottom: 10px;
+}
+
+.feature1 p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+
+
+.blue-text {
+  color: blue;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+   ;
+}
+
+.card {
+  flex: 0 0 270px;
+  margin-right: 40px;
+  margin-bottom: 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #050505ea;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  
+}
+
+.card p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.image {
+  max-width: 20px; /* Set maximum width for the images */
+  height: 20px;
+}
+
+.feature1-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature1 {
+  /* border-radius: 5px; */
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
+  flex-basis: calc(100% - 90x);
+  margin-bottom: 70px;
+  padding: 80px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.feature1:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.feature1-content {
+  flex: 3;
+  padding-right: 70px;
+}
+
+.feature1-image {
+  flex: 10;
+  text-align: center;
+  
+}
+
+.feature1-image img {
+  max-width: 100%;
+  height: 900px;
+  max-height: 600px; /* Increase the maximum height of the image */
+  object-fit: contain;
+}
+
+.feature1 h2 {
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature1 p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff;
+  border-radius: 5px; */
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
+  flex-basis: calc(100% - 70x);
+  margin-bottom: 90px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.feature-image {
+  flex: 1.5;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height:300px;
+  max-height: 300px; /* Increase the maximum height of the image */
+  /* object-fit: contain; */
+}
+
+.feature-content {
+  flex: 2;
+}
+
+.feature h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.f2 {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff;
+  border-radius: 5px; */
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
+  flex-basis: calc(100% - 70x);
+  margin-bottom: 140px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.f2-image {
+  flex: 1.5;
+  text-align: center;
+  margin-right: 90px;
+}
+
+.f2-image img {
+  max-width: 100%;
+  height: 400px;
+  max-height: 600px; /* Increase the maximum height of the image */
+ 
+}
+
+.f2-content {
+  flex: 2;
+}
+
+.f2 h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.f2 p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.board {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 70px;
+}
+
+.text {
+  flex: 0.8;
+  font-size: 1.2em;
+
+}
+
+.image-board {
+  margin-left: 20px; /* Add spacing between text and image */
+}
+
+.image-board img {
+  max-width: 100%;
+  height: 400px;
+}
+

@@ -1,0 +1,270 @@
+/* .assesment-container {
+    display: flex;
+    max-width: 100%;
+    height: 650px;
+    background-color: #f0f0f08e;
+    margin: 0 auto;
+}
+
+
+.sidebar {
+    width: 300px;
+    background-color: #f3f0f0;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+
+.main-content {
+    flex-grow: 1;
+    width: 100%;
+    background-color: #e76e6e;
+    padding: 20px;
+    height: 800px;
+}
+
+
+.assesment-h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.assesment-links {
+    margin-bottom: 20px;
+    padding-inline: 30px;
+    height: 200px;
+    line-height: 40px;
+    background-color: #f7e6e6;
+    width: 220px;
+}
+
+.candidate{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+
+.interviews{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+
+.reports{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+
+.settings{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+
+.assesment-links a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    border-radius: 200px;
+    background-color: #fff;
+    &:hover {
+        background-color: #0fe43d;
+    }
+}
+
+.assesment-main-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 100%;
+}
+
+
+.assesment-h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.assesment-filter {
+    background-color: #f0f0f0;
+    padding: 10px 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.assesment-second-h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.assesment-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
+.assesment-card-container {
+    Styles for the container of the fetch data
+}
+
+.assesment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 34px;
+    cursor: pointer;
+    margin-top: 10px;
+    &:hover {
+        background-color: #0fe43d;
+    }
+}
+
+
+.past-assesment-h2 {
+    font-size: 20px;
+    margin-top: 20px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Styles for Language Section */
+.language-section {
+    margin-bottom: 20px;
+  }
+  
+  .language-section img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .language-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .language-section div {
+    margin-bottom: 5px;
+  }
+  
+  /* Rest of the CSS remains unchanged */
+  
+  /* Styles for Assessment Container */
+  .assessment-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  /* Styles for Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .assessment-h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .assessment-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .assessment-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .assessment-main-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .assessment-h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* .assessment-filter {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  } */
+  .assessment-filter {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .assessment-language{
+    background-color: #f0f0f0;
+  }
+  
+  .assessment-second-h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .assessment-card {
+    margin-top: 20px;
+  }
+  
+  .assessment-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .assessment-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .past-assessment-h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .arrow-key{
+    margin-left: 50px;
+  }

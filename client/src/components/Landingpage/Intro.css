@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+.home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+    height: 600px;
+  }
+  .home-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: -2;
+    max-width: 900px;
+  }
+  .home-image-section {
+    max-width: 800px;
+    max-height: 800px;
+    flex: 1;
+    background-image: url("https://media.istockphoto.com/id/1439425791/photo/digital-technology-software-development-concept-coding-programmer-working-on-laptop-with.webp?b=1&s=170667a&w=0&k=20&c=c0Q8u1Y5yFJCDxltBZd0RAn1g01Se6qCjZGS5q9XLZs=");
+    background-size: cover;
+    background-position: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50px;
+  }
+  .home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .primary-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #000;
+    line-height: 5rem;
+    max-width: 800px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-bottom: -10px;
+  }
+
+  .primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #000;
+    margin: 1.5rem 0rem;
+    max-width: 800px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    line-height: 35px;
+  }
+  
+  .secondary-button {
+    padding: 1rem 2.5rem;
+    background-color: #3498db;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 2.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 390px;
+  }
+
+  .secondary-button svg {
+    margin-left: 0.75rem;
+    font-size: 2.5rem;
+    color: black;
+    background-color: #3498db;
+  }
+
+  .secondary-button:hover {
+    background-color: #0fe43d;
+    transition: 0.2s;
+  }
+
+  .secondary-button svg:hover{
+    background-color: #0fe43d;
+  }
+
+  .primary-heading span{
+    color: #0fe43d;
+  }

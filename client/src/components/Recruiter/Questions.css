@@ -19,8 +19,8 @@
 
 .manage-question-form {
   margin-bottom: 20px;
-  width: 600px;
-  margin-left: 200px;
+  width: 700px;
+  margin-left: 300px;
   line-height: 40px;
 }
 
@@ -47,7 +47,7 @@
   border: none;
   border-radius: 35px;
   cursor: pointer;
-  margin-left: 450px;
+  margin-left: 550px;
   width: 100px;
 }
 
@@ -57,6 +57,7 @@
 
 .fetched-question {
   margin-top: 20px;
+  margin-left: 60px;
 }
 
 .fetched-question-h1 {

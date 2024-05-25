@@ -14,6 +14,19 @@ function IntervieweeAssessments() {
   const [isComplexityDropdownOpen, setIsComplexityDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
+  // useEffect(() => {
+  //   const fetchQuestions = async () => {
+  //     try {
+  //       const response = await fetch('/code_challenges');
+  //       const data = await response.json();
+  //       setQuestions(data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
+  //   fetchQuestions();
+  // }, []);
+
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
@@ -25,7 +38,7 @@ function IntervieweeAssessments() {
       }
     };
     fetchQuestions();
-  }, []);
+  }, []);  
 
   const handleLanguageButtonClick = (language) => {
     setSelectedLanguage(language === selectedLanguage ? null : language);

@@ -1,19 +1,24 @@
-body{
-  background-color: #141111;
-}
-
 .sign-up-container {
     display: flex;
     flex-direction: column;
-    width: 800px; 
-    height: 500px; 
+    height: 100%; 
     margin: 0 auto;
   }
   
+  .signup-title{
+    margin-top: 100px;
+    text-align: center;
+  }
 
   .outer-container {
     display: flex; 
     flex-grow: 1;
+    border-radius: 30px;
+    border-color: #3e8e41;
+    width: 75%;
+    margin: 0 auto;
+    height: 590px;
+    margin-top: -28px;
   }
   
   
@@ -23,13 +28,27 @@ body{
     background-image: url("https://media.istockphoto.com/id/1496160438/photo/web-browser-login-page-username-and-password-entry-3d-illustration.webp?b=1&s=170667a&w=0&k=20&c=d6HdhAZLkpwgnf9DWSXNHB1c37XpKwJBFCC5yjHZMzA=");
     background-size: cover; 
     background-position: center; 
-    border-radius: 20px;
+    border-radius: 30px;
+    max-width: 500px;
+    margin-left: 100px;
+    height: 550px;
+    margin-top: 30px;
   }
   
-  
-  .form {
-    flex: 1;
-    padding: 50px
+  .inner-container1{
+    margin-left: 3px;
+  }
+
+  .signup-form {
+    margin-top: 30px;
+    padding: 30px;
+    line-height: 30px;
+    width: 500px;
+    border: 1px solid #8a8383;
+    margin-left: 10px;
+    border-radius: 30px;
+    border-color: #3e8e41;
+    height: 490px;
   }
   
   .title {
@@ -43,8 +62,15 @@ body{
     margin-bottom: 5px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
+    margin-top: 7px;
+    margin-top: 10px;
   }
   
+  .role-label-sg{
+    width: 550px;
+    height: 35px;
+    border-radius: 30px;
+  }
 
   input[type="text"],
   input[type="email"],
@@ -52,28 +78,30 @@ body{
   input[type="password"] {
     width: 100%; 
     padding: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    border: 1px solid #9e9393; 
+    border-radius: 30px; 
     box-sizing: border-box;
-    background-color: #fff; 
+    background-color: #fff;
+    margin-top: -1px;
   }
   
   
   .button {
     display: block; 
-    width: 100%;
+    width: 20%;
     padding: 10px;
     background-color: #3498db; 
     color: white;
     border: none; 
-    border-radius: 4px; 
+    border-radius: 40px; 
     cursor: pointer; 
     margin-top: 20px;
+    margin-left: 200px;
   }
   
  
   .button:hover {
-    background-color: #2980b9; 
+    background-color: #1db918; 
   }
   
   
@@ -90,7 +118,7 @@ body{
   }
   
  
-  .login-button {
+  .sg-login-button {
     border: none; 
     background-color: transparent; 
     color: #3498db;
@@ -99,16 +127,16 @@ body{
   }
   
   
-  .login-button:hover {
+  .sg-login-button:hover {
     text-decoration: underline;
   }
   
-  .login-button:active {
+  .sg-login-button:active {
     color: #3e8e41;
   }
   
   
-  .login-button:focus {
+  .sg-login-button:focus {
     outline: none;
   }
 
@@ -116,8 +144,11 @@ body{
     width: 100%; 
     padding: 10px; 
     border: 1px solid #ccc; 
-    border-radius: 4px; 
+    border-radius: 40px; 
     box-sizing: border-box; 
     background-color: #fff;
   }
   
+  .signup-icon{
+    margin-right: 10px;
+  }

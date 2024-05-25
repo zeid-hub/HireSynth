@@ -1,0 +1,35 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    width: 200px;
+    background: transparent;
+    margin-left: 40px;
+  }
+  
+  .timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+    color: #fff;
+    background: transparent;
+  }
+  
+  .timer-value {
+    font-size: 1.5em;
+    background: transparent;
+  }
+  
+  .timer-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background: transparent;
+  }
+  
+  .timer-separator {
+    font-size: 1.2em;
+    background: transparent;
+  }
+  

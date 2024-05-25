@@ -1,0 +1,109 @@
+.div-payments {
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 79px;
+    background-color: #88a8ca;
+    /* background-image: url("https://i.pinimg.com/236x/60/6f/29/606f29f5a9fd00f0d13688381dfed021.jpg"); */
+    /* background-image: url("https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .div-payments h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  
+  .div-inputs {
+    margin-bottom: 20px;
+    margin-top: -5px;
+    line-height: 20px;
+  }
+  
+  .div-inputs label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .div-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #747171;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  
+  .div-inputs input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .div-inputs input[type="text"]::placeholder {
+    color: #adabab;
+    font-size: 19px;
+  }
+  
+  .div-inputs input[type="text"].card-number,
+  .div-inputs input[type="text"].card-holder,
+  .div-inputs input[type="text"].amount {
+    font-family: "Courier New", Courier, monospace;
+    width: 720px;
+  }
+  
+  .div-inputs .div-expiration-cvv {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .div-inputs .div-country-city {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .div-inputs input[type="text"].expiration-date,
+  .div-inputs input[type="text"].cvv,
+  .div-inputs input[type="text"].country,
+  .div-inputs input[type="text"].city {
+    width: 220px;
+    margin-top: 10px;
+  }
+  
+  .div-inputs input[type="text"].zip-code {
+    width: 100%;
+  }
+  
+  .label-label{
+    margin-top: 16px;
+  }
+  
+  .payment-icon{
+    margin-right: 2px;
+    color: #353636;
+    font-size: 25px;
+  }
+
+  .butt-payment{
+    font-size: 20px;
+    margin-left: 270px;
+    border-radius: 20px;
+    height: 45px;
+    width: 150px;
+    background-color: #007bff;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+  }
+
+  .butt-payment:hover{
+    background-color: #10e95f;
+  }

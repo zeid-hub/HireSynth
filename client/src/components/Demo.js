@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import YouTube from "react-youtube";
 import "./Demo.css"; 
 
@@ -29,3 +30,16 @@ const Demo = () => {
 };
 
 export default Demo;
+=======
+import "./Demo.css"
+
+function Demo (){
+    return (
+        <div className="demo-page">
+            <h1>Demo</h1>
+        </div>
+    )
+}
+
+export default Demo;
+>>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606

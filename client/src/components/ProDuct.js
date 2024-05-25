@@ -16,14 +16,6 @@ function ProDuct() {
           <p>Welcome to our software platform designed to automate the in-person technical interview process.</p>
         </div>
       </div>
-
-      {/* <div className="content">
-        <div className="head-image">
-          <img src="recruiter.jpeg" alt="Smart Recruiter" />
-        </div>
-      </div> */}
-      
-      
       <div className="card-container">
         <div className="card">
           <h2><span className="blue-text">User Authentication:</span></h2>
@@ -44,12 +36,11 @@ function ProDuct() {
           <h2><span className="blue-text">Invitation Management:</span></h2>
           <p>Recruiters can send invitations to interviewees individually or in bulk, and interviewees can accept invitations.</p>
         </div>
-      </div>
-     
+      </div>    
       <div className="feature1-container">
         <div className="feature1">
           <div className="feature1-content">
-            <h2><span className="blue-text">Performance Analytics:</span></h2>
+            <h2><span className="blue-text-1">Performance Analytics:</span></h2>
             <p>Recruiters can track interviewees' performance with system-generated statistics and sorted lists based on scores.</p>
           </div>
           <div className="feature1-image">
@@ -88,6 +79,7 @@ function ProDuct() {
         </div>
       </div>    
 
+<<<<<<< HEAD
       <div className="board">
         <div className="text">
           <h2><span className="blue-text">Whiteboard Process Submission:</span></h2>
@@ -97,6 +89,18 @@ function ProDuct() {
           <img src="whiteboard.png" alt="Whiteboard Process Submission" />
         </div>
       </div>
+=======
+      <div class="board">
+        <div class="main-text">
+          <h2><span class="blue-text-3">Whiteboard Process Submission:</span></h2>
+          <p>Interviewees can submit a full whiteboard process, including writing BDD, pseudocode, and code, as part of their assessment.</p>
+        </div>
+        <div class="image-board">
+          <img src="whiteboard.png" alt="Smart Recruiter" />
+        </div>
+    </div>
+
+>>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606
 
       <div className="card-container">
         <div className="card">
@@ -114,6 +118,7 @@ function ProDuct() {
           <p>Powered by Python (Flask) for the backend, our platform offers scalability and performance to handle large-scale assessments efficiently.</p>
         </div>
       </div>
+<<<<<<< HEAD
 
       {/* <div className="header">
         <h3>See Hiresynth in Action</h3>
@@ -127,6 +132,8 @@ function ProDuct() {
       {/* <Link to="/signup">
         <button>Sign Up Now</button>
       </Link> */}
+=======
+>>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606
     </div>
   );
 }

@@ -65,7 +65,7 @@
 
 .company-h5 {
     font-size: 20px;
-    color: #000;
+    color: #fff;
     margin-bottom: 5px;
 }
 
@@ -81,8 +81,8 @@
     margin-right: 5px;
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: #fff;
-    color: #333;
+    background: transparent;
+    color: #fff;
     font-size: 14px;
     display: inline-block;
 }

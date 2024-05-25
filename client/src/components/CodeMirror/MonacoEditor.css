@@ -1,0 +1,120 @@
+  .main-code-mirror-container {
+    display: flex;
+    height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2e2a2a;
+    margin-top: 70px;
+  }
+  
+  .div-for-question {
+    flex: 1;
+    padding-right: 20px;
+    width: 100%;
+    margin-right: -190px;
+    margin-left: -12px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #2e2a2a;
+    margin-top: 51px;
+  }
+  
+  .div-for-coding {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 190px; /* Adjust margin as needed */
+    height: 500px;
+    border-radius: 20px;
+    background-color: #2e2a2a;
+  }
+  
+  .code-mirror-h2 {
+    font-size: 17px;
+    color: #fff;
+    background-color: #2e2a2a;
+    margin-top: 25px;
+  }
+  
+  .div-for-language-and-time {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    justify-content: space-between;
+    background: transparent;
+  }
+  
+  .timer-place {
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    width: 300px;
+    border-radius: 9px;
+    color: #fff;
+    background: transparent;
+    margin-right: 50px; /* Adjust margin as needed */
+    border: 1px solid #ccc;
+  }
+  
+  .select-languages {
+    font-size: 25px;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    width: 170px;
+    border-radius: 9px;
+    color: #fff;
+    background: transparent;
+  }
+  
+  .python {
+    background-color: #3a3434;
+  }
+  
+  .javascript {
+    background-color: #3a3434;
+  }
+  
+  .java {
+    background-color: #3a3434;
+  }
+  
+  .cplus {
+    background-color: #3a3434;
+  }
+  
+  .actual-code-mirror {
+    border: 1px solid #ccc;
+    /* border-radius: 30px; */
+    flex: 1;
+    margin-bottom: 16px;
+    max-width: 600px;
+    height: 537px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 450px;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0fe43d;
+  }
+  
+.code-mirror-run-code{
+  background-color: #2e2a2a;
+  display: flex;
+  width: 100%;
+  height: 537px;
+  /* border-radius: 50px; */
+}
+
+.code-mirror-container .CodeMirror textarea {
+  border-radius: 10px;
+}

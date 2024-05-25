@@ -65,7 +65,8 @@
   }
   
   .award-box h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 30px;
     color: #fff;
     background-color: #122947;
   }
@@ -74,5 +75,6 @@
     font-size: 1rem;
     color: #fff;
     background-color: #122947;
+    margin-top: 10px;
   }
   

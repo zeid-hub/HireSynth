@@ -34,6 +34,7 @@
   font-size: 1rem;
   background-color: #099c29;
   font-weight: 500px;
+  margin-left: 50px;
 }
 
 .btn5 {
@@ -67,11 +68,13 @@
   margin-top: 20px;
   margin-bottom: 10px;
   background-color: #333;
+  margin-left: 105px;
 }
 
 .box p {
   font-size: 1rem;
   background-color: #333;
+  margin-left: 20px;
 }
 
 .input-flex {
@@ -126,10 +129,17 @@
   background-color: #333;
 }
 
+.footer-text input{
+  border-radius: 30px;
+  max-width: 60%;
+  margin-left: 50px;
+}
+
 .footer-text button{
   background-color: #3498db;
   border-radius: 15px;
   margin-top: 10px;
+  margin-left: 20px;
   &:hover {
     background-color: #0fe43d;
   }

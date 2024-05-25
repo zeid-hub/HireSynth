@@ -26,7 +26,7 @@ function Signup() {
       });
       return;
     }
-
+  
     if (password !== confirmPassword) {
       Swal.fire({
         icon: 'error',
@@ -35,7 +35,7 @@ function Signup() {
       });
       return;
     }
-
+  
     try {
       const response = await fetch('/adduser', {
         method: 'POST',
@@ -47,7 +47,7 @@ function Signup() {
           password,
         }),
       });
-
+  
       if (!response.ok) {
         const errorData = await response.json();
         Swal.fire({
@@ -57,19 +57,19 @@ function Signup() {
         });
         return;
       }
-
+  
       Swal.fire({
         icon: 'success',
         title: 'Good job!',
         text: 'You have successfully signed up!'
       });
-
+  
       setUsername('');
       setEmail('');
       setRole("");
       setPassword('');
       setConfirmpassword('');
-
+  
       if (role === 'Recruiter') {
         navigate('/recruiter-dashboard');
       } else {
@@ -83,7 +83,7 @@ function Signup() {
         text: 'Signup failed. Please try again!'
       });
     }
-  };
+  };  
 
   return (
     <div className='sign-up-container'>

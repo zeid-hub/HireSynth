@@ -6,7 +6,6 @@
 .text-container {
   margin-top: 20px;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -110,13 +109,3 @@
     width: 200px;
   }
 }
-
-=======
-.blue-text-1 {
-  color: #1e4cbf;
-}
-
-.blue-text-3 {
-  color: #002d9c;
-}
->>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606

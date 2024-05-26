@@ -27,10 +27,10 @@ function CodeEditor() {
     return () => clearTimeout(timer);
   }, []);
   
-
   const handleSubmit = async () => {
     console.log("Submitted code:", code);
     console.log("Language used:", language);
+    console.log("Question:", question); // Log the question
     const endTime = Date.now();
     const timeTakenInSeconds = (endTime - startTime) / 1000;
     console.log("Time taken:", timeTakenInSeconds, "seconds");
@@ -43,15 +43,15 @@ function CodeEditor() {
       // Console log the output
       console.log("Code Output:", result.output);
   
-      // Make a POST request to save the code execution data
+      // Make a POST request to save the code result data
       const postData = {
         user_code: code,
         code_output: result.output, // Include the code output
         language,
-        timer: new Date(startTime).toISOString() // Convert startTime to ISO string format
+        question // Include the question
       };
   
-      const response = await fetch('/code_execution', {
+      const response = await fetch('/code_results', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -60,15 +60,14 @@ function CodeEditor() {
       });
   
       if (!response.ok) {
-        throw new Error('Failed to save code execution data');
+        throw new Error('Failed to save code result data');
       }
   
-      console.log('Code execution data saved successfully');
+      console.log('Code result data saved successfully');
     } catch (error) {
-      console.error("Error executing code:", error);
+      console.error("Error submitting code result:", error);
     }
-  };
-  
+  };  
 
   return (
     <div className="main-code-mirror-container">
@@ -116,7 +115,8 @@ function CodeEditor() {
             language={language}
             onChange={(value, viewUpdate) => {
               setCode(value);
-            }}
+              setIsTimerRunning(true);
+              }}
           />
           <Output output={output} />
         </div>

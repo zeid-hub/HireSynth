@@ -15,6 +15,7 @@ import AdminPassword from './components/Recruiter/AdminPassword';
 import Demo from './components/Demo';
 import Price from './components/Payments/Price';
 import PaymentForm from './components/Payments/PaymentForm';
+import About from './components/About';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/demo-page" element={<Demo />} />
         <Route path="/packages" element={<Price />} />
         <Route path="/payments" element={<PaymentForm />} />
+        <Route path="/about us" element={<About />} />
       </Routes>
     </div>
   );

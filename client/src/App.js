@@ -19,7 +19,7 @@ import PaymentForm from './components/Payments/PaymentForm';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/questtrail" element={<ProDuct />} />

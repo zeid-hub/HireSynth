@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
 }
 
 .login-container {
@@ -40,7 +40,7 @@ body {
   justify-content: center;
   width: 500px;
   padding: 20px;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); 
 }
 
 .login-form {
@@ -69,7 +69,7 @@ body {
   max-width: 400px;
   height: 40px;
   font-size: 16px;
-  outline: none; /* Remove blue outline on focus */
+  outline: none; 
 }
 
 .error-message {
@@ -88,7 +88,7 @@ body {
   transition: background-color 0.3s ease;
   font-size: 18px;
   margin-top: 20px;
-  outline: none; /* Remove blue outline on focus */
+  outline: none; 
 }
 
 .login-button:hover {
@@ -141,7 +141,7 @@ body {
   max-width: 470px;
   padding: 10px;
   font-size: 16px;
-  outline: none; /* Remove blue outline on focus */
+  outline: none; 
 }
 
 .sg-login-button {

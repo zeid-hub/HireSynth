@@ -63,6 +63,7 @@ import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons/faTachometerA
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons/faQuestionCircle'; // Manage Questions icon
 import { faKey } from '@fortawesome/free-solid-svg-icons/faKey'; // Change Password icon
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons/faSignOutAlt'; // Logout icon
+import { faFileCode } from '@fortawesome/free-solid-svg-icons';
 import Admin from "../Images/Admin.jpg"
 import Swal from "sweetalert2";
 import "./AdminSidebar.css"
@@ -101,6 +102,7 @@ function AdminSidebar (){
                 <NavLink className="dashbord" to="/recruiter-dashboard" ><FontAwesomeIcon icon={faTachometerAlt} className="icon-dashboard"/> DASHBOARD</NavLink>
                 <NavLink to="/questions"><FontAwesomeIcon icon={faQuestionCircle} className="icon-question"/> MANAGE QUESTIONS</NavLink>
                 <NavLink to="/admin-password"><FontAwesomeIcon icon={faKey} className="icon-password"/> CHANGE PASSWORD</NavLink>
+                <NavLink to="/admin-cand-output"><FontAwesomeIcon icon={faFileCode} className="icon-result"/> CANDIDATE OUTPUT</NavLink>
                 <button className="logout-button" onClick={handleLogout}><FontAwesomeIcon icon={faSignOutAlt} className="icon-logout"/> LOGOUT</button>
             </div>
       </div>

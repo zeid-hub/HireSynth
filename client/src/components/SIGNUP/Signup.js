@@ -41,15 +41,16 @@ function Signup() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          username,
-          email,
-          role,
-          password,
+          "username" : username,
+          "email" : email,
+          "role" : role,
+          "password" : password
         }),
       });
   
       if (!response.ok) {
         const errorData = await response.json();
+        console.log("errorData")
         Swal.fire({
           icon: 'error',
           title: 'Oops...',

@@ -73,7 +73,8 @@
   .cand-icon-dashoard,
   .cand-icon-result,
   .cand-icon-password,
-  .cand-icon-logout {
+  .cand-icon-logout,
+  .cand-icon-upgrade {
     font-size: 28px;
     margin-right: 12px;
     }

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './IntervieweeAssessment.css';
 import CandidateSidebar from '../SideBar/CandidateSidebar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function IntervieweeAssessments() {
   const [questions, setQuestions] = useState([]);
@@ -60,7 +58,6 @@ function IntervieweeAssessments() {
       <CandidateSidebar />
       <div className="the-content">
         <div className="interviewee-main-container">
-          <button className='button-upgrade' onClick={() => navigate('/packages')}> <FontAwesomeIcon icon={faStar} /> UPGRADE</button>
           <h2 className="interviewee-h2">Filter By</h2>
           <div className="interviewee-filter">
             <div

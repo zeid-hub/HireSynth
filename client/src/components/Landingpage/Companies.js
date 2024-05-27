@@ -4,22 +4,6 @@ import "./Companies.css"
 function Companies (){
 
     const location = [
-        // {
-        //   id: 1,
-        //   name: "New Orleans, Louisiana",
-        //   Villas: "12 Villas",
-        //   Apartments: "10 Apartments",
-        //   Offices: "07 Offices",
-        //   cover: "https://media.istockphoto.com/id/1465676785/photo/new-orleans-skyline-aerial.webp?b=1&s=170667a&w=0&k=20&c=f_0QWW2TIJue5yN_AdsxaBRJiv4SRYiQa6jMsf_kzNs=",
-        // },
-        // {
-        //   id: 2,
-        //   name: "Jerrsy, United State",
-        //   Villas: "12 Villas",
-        //   Apartments: "10 Apartments",
-        //   Offices: "07 Offices",
-        //   cover: "https://media.istockphoto.com/id/2079413914/photo/midtown-atlanta-skyline.webp?b=1&s=170667a&w=0&k=20&c=6fgWLnVqrJhLn-mICFcZeZeX35ShfRhi_Pp6eHzDKt8=",
-        // },
         {
           id: 1,
           name: "Liverpool, London",

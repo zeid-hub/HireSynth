@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+
 .get-demo-section {
     text-align: center;
     padding: 20px;
+    margin-top: 110px;
   }
   
   .get-demo-section h2 {
@@ -20,11 +21,11 @@
   
   .video-responsive {
     overflow: hidden;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     position: relative;
     height: 0;
-    margin: 0 auto; /* Center the video container */
-    max-width: 640px; /* Adjust to your preference */
+    margin: 0 auto; 
+    max-width: 640px; 
   }
   
   .video-responsive iframe {
@@ -35,8 +36,4 @@
     position: absolute;
   }
   
-=======
-.demo-page{
-    margin-top: 110px;
-}
->>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606
+ 

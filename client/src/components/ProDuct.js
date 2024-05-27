@@ -79,17 +79,6 @@ function ProDuct() {
         </div>
       </div>    
 
-<<<<<<< HEAD
-      <div className="board">
-        <div className="text">
-          <h2><span className="blue-text">Whiteboard Process Submission:</span></h2>
-          <p>Interviewees can submit a full whiteboard process, including writing BDD, pseudocode, and code, as part of their assessment.</p>
-        </div>
-        <div className="image-board">
-          <img src="whiteboard.png" alt="Whiteboard Process Submission" />
-        </div>
-      </div>
-=======
       <div class="board">
         <div class="main-text">
           <h2><span class="blue-text-3">Whiteboard Process Submission:</span></h2>
@@ -100,7 +89,6 @@ function ProDuct() {
         </div>
     </div>
 
->>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606
 
       <div className="card-container">
         <div className="card">
@@ -118,22 +106,6 @@ function ProDuct() {
           <p>Powered by Python (Flask) for the backend, our platform offers scalability and performance to handle large-scale assessments efficiently.</p>
         </div>
       </div>
-<<<<<<< HEAD
-
-      {/* <div className="header">
-        <h3>See Hiresynth in Action</h3>
-        <h1>Get a Live Demonstration</h1>
-      </div>
-
-      <div className="demo-button-container">
-        <button className="bb-button" onClick={handleDemoButtonClick}>Book a Demo</button>
-      </div> */}
-      
-      {/* <Link to="/signup">
-        <button>Sign Up Now</button>
-      </Link> */}
-=======
->>>>>>> fd4a71afb4314d43ff4b1d2fa3ec31250ec4c606
     </div>
   );
 }

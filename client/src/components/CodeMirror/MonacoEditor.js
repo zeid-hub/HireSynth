@@ -9,14 +9,15 @@ import { cpp } from "@codemirror/lang-cpp";
 import Timer from "../TestTime/Timer";
 import Output from "../TheOutput/Output";
 import { executeCode } from "../../API";
+import Swal from "sweetalert2";
 
 function CodeEditor() {
   const [code, setCode] = useState("");
   const [language, setLanguage] = useState("javascript");
   const { question } = useParams();
   const [isTimerRunning, setIsTimerRunning] = useState(true);
-  const [startTime, setStartTime] = useState(0); 
-  const [output, setOutput] = useState(""); 
+  const [startTime, setStartTime] = useState(0);
+  const [output, setOutput] = useState("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,49 +27,58 @@ function CodeEditor() {
 
     return () => clearTimeout(timer);
   }, []);
-  
 
   const handleSubmit = async () => {
     console.log("Submitted code:", code);
     console.log("Language used:", language);
+    console.log("Question:", question);
     const endTime = Date.now();
     const timeTakenInSeconds = (endTime - startTime) / 1000;
     console.log("Time taken:", timeTakenInSeconds, "seconds");
     setIsTimerRunning(false);
-  
+
     try {
       const { run: result } = await executeCode(language, code);
       setOutput(result.output.split("\n"));
-  
-      // Console log the output
+
       console.log("Code Output:", result.output);
-  
-      // Make a POST request to save the code execution data
+
       const postData = {
         user_code: code,
-        code_output: result.output, // Include the code output
+        code_output: result.output,
         language,
-        timer: new Date(startTime).toISOString() // Convert startTime to ISO string format
+        question
       };
-  
-      const response = await fetch('/code_execution', {
-        method: 'POST',
+
+      const response = await fetch("https://hiresynth-backend.onrender.com/code_results", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(postData)
       });
-  
+
       if (!response.ok) {
-        throw new Error('Failed to save code execution data');
+        throw new Error("Failed to save code result data");
       }
-  
-      console.log('Code execution data saved successfully');
+
+      console.log("Code result data saved successfully");
+
+      const responseData = await response.json();
+      const score = responseData.score;
+      console.log("Score:", score);
+      
+      Swal.fire({
+        title: "Your score",
+        text: `Your score is: ${score}`,
+        icon: "success",
+        confirmButtonText: "Ok"
+      });
+
     } catch (error) {
-      console.error("Error executing code:", error);
+      console.error("Error submitting code result:", error);
     }
   };
-  
 
   return (
     <div className="main-code-mirror-container">
@@ -97,7 +107,10 @@ function CodeEditor() {
           </select>
           <div className="timer-place">
             {isTimerRunning && (
-              <Timer duration={2400} onTimeUp={() => setIsTimerRunning(false)} />
+              <Timer
+                duration={2400}
+                onTimeUp={() => setIsTimerRunning(false)}
+              />
             )}
           </div>
         </div>
@@ -111,11 +124,12 @@ function CodeEditor() {
               language === "javascript" && javascript({ jsx: true }),
               language === "python" && python(),
               language === "java" && java(),
-              language === "cpp" && cpp(),
+              language === "cpp" && cpp()
             ].filter(Boolean)}
             language={language}
             onChange={(value, viewUpdate) => {
               setCode(value);
+              setIsTimerRunning(true);
             }}
           />
           <Output output={output} />

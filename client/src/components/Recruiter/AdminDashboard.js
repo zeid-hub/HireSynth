@@ -1,11 +1,10 @@
-
 import React, { useEffect, useState } from "react";
 import Chart from "chart.js/auto";
 import "./AdminDashboard.css";
 
-let questionChart; // Variable to store reference to the question chart instance
-let recruiterChart; // Variable to store reference to the recruiter chart instance
-let intervieweeChart; // Variable to store reference to the interviewee chart instance
+let questionChart;
+let recruiterChart;
+let intervieweeChart;
 
 function DashboardSummary() {
     const [intervieweeCount, setIntervieweeCount] = useState(0);
@@ -18,7 +17,7 @@ function DashboardSummary() {
 
     const fetchData = async () => {
         try {
-            const userResponse = await fetch("/getallusers");
+            const userResponse = await fetch("https://hiresynth-backend.onrender.com/getallusers");
             const userData = await userResponse.json();
 
             console.log("All users:", userData); 
@@ -32,7 +31,7 @@ function DashboardSummary() {
             setIntervieweeCount(interviewees.length);
             setRecruiterCount(recruiters.length);
 
-            const questionResponse = await fetch("/code_challenges");
+            const questionResponse = await fetch("https://hiresynth-backend.onrender.com/code_challenges");
             const questionData = await questionResponse.json();
 
             console.log("All questions:", questionData);
@@ -43,9 +42,7 @@ function DashboardSummary() {
         }
     };
 
-    // Function to create and update charts
     const createCharts = () => {
-        // Destroy existing charts if they exist
         if (questionChart) {
             questionChart.destroy();
         }
@@ -56,12 +53,10 @@ function DashboardSummary() {
             intervieweeChart.destroy();
         }
 
-        // Get the canvas elements
         const questionChartCanvas = document.getElementById("questionChart");
         const recruiterChartCanvas = document.getElementById("recruiterChart");
         const intervieweeChartCanvas = document.getElementById("intervieweeChart");
 
-        // Create question chart
         questionChart = new Chart(questionChartCanvas, {
             type: "bar",
             data: {
@@ -69,7 +64,7 @@ function DashboardSummary() {
                 datasets: [{
                     label: "Total Questions",
                     data: [questionCount],
-                    backgroundColor: "rgba(255, 159, 64, 0.6)" // Change the color here
+                    backgroundColor: "rgba(255, 159, 64, 0.6)"
                 }]
             },
             options: {
@@ -81,7 +76,6 @@ function DashboardSummary() {
             }
         });
 
-        // Create recruiter chart
         recruiterChart = new Chart(recruiterChartCanvas, {
             type: "bar",
             data: {
@@ -101,7 +95,6 @@ function DashboardSummary() {
             }
         });
 
-        // Create interviewee chart
         intervieweeChart = new Chart(intervieweeChartCanvas, {
             type: "bar",
             data: {

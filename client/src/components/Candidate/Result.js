@@ -8,7 +8,7 @@ function Result () {
             <div className="candidate-sidebar">
                 <CandidateSidebar />
             </div>
-            {/* <h1 className="result-h1">Results</h1> */}
+            <h1 className="result-h1">Results</h1>
         </div>
     )
 }

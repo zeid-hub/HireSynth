@@ -5,6 +5,7 @@ import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons/faTachometerA
 import { faUserCheck } from '@fortawesome/free-solid-svg-icons/faUserCheck'; // Candidate Result icon
 import { faKey } from '@fortawesome/free-solid-svg-icons/faKey'; // Change Password icon
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons/faSignOutAlt'; // Logout icon
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Candidate from "../Images/Candidate.jpg"
 import Swal from "sweetalert2";
 import "./CandidateSidebar.css"
@@ -14,7 +15,7 @@ function CandidateSidebar (){
     const navigate = useNavigate();
     const handleLogout = async () => {
         try {
-          await fetch("/logout", {
+          await fetch("https://hiresynth-backend.onrender.com/logout", {
             method: "DELETE",
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -24,7 +25,6 @@ function CandidateSidebar (){
           navigate("/login");
 
           Swal.fire({
-            // icon: <FontAwesomeIcon icon={faCheck} style={{ backgroundColor: 'green' }} />,
             icon: "success",
             title: 'Goodbye!',
             text: 'You have successfully logged out.'
@@ -43,6 +43,7 @@ function CandidateSidebar (){
                 <NavLink to="/interviewee-dashboard"><FontAwesomeIcon icon={faTachometerAlt} className="cand-icon-dashoard"/> DASHBOARD</NavLink>
                 <NavLink to="/candidate-result"><FontAwesomeIcon icon={faUserCheck} className="cand-icon-result"/> CANDIDATE RESULT</NavLink>
                 <NavLink to="/candidate-password"><FontAwesomeIcon icon={faKey} className="cand-icon-password"/> CHANGE PASSWORD</NavLink>
+                <NavLink to="/packages"> <FontAwesomeIcon icon={faStar} className="cand-icon-upgrade"/> UPGRADE</NavLink>
                 <button className='interviewee-button' onClick={handleLogout}><FontAwesomeIcon icon={faSignOutAlt} className="cand-icon-logout"/> LOGOUT</button>
             </div>
         </div>

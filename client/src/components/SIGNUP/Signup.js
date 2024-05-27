@@ -37,19 +37,20 @@ function Signup() {
     }
   
     try {
-      const response = await fetch('/adduser', {
+      const response = await fetch('https://hiresynth-backend.onrender.com/adduser', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          username,
-          email,
-          role,
-          password,
+          "username" : username,
+          "email" : email,
+          "role" : role,
+          "password" : password
         }),
       });
   
       if (!response.ok) {
         const errorData = await response.json();
+        console.log("errorData")
         Swal.fire({
           icon: 'error',
           title: 'Oops...',

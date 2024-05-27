@@ -15,7 +15,7 @@ function IntervieweeAssessments() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch('/code_challenges');
+        const response = await fetch('https://hiresynth-backend.onrender.com/code_challenges');
         const data = await response.json();
         setQuestions(data);
       } catch (error) {

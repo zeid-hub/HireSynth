@@ -15,7 +15,7 @@ function CandidateSidebar (){
     const navigate = useNavigate();
     const handleLogout = async () => {
         try {
-          await fetch("/logout", {
+          await fetch("https://hiresynth-backend.onrender.com/logout", {
             method: "DELETE",
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -25,7 +25,6 @@ function CandidateSidebar (){
           navigate("/login");
 
           Swal.fire({
-            // icon: <FontAwesomeIcon icon={faCheck} style={{ backgroundColor: 'green' }} />,
             icon: "success",
             title: 'Goodbye!',
             text: 'You have successfully logged out.'

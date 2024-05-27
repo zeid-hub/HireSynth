@@ -9,7 +9,7 @@ const Timer = ({ duration, onTimeUp }) => {
       setTimeLeft(prevTime => {
         if (prevTime === 0) {
           clearInterval(timer);
-          onTimeUp(); // Call the callback function when time is up
+          onTimeUp();
           return 0;
         } else {
           return prevTime - 1;
@@ -17,10 +17,9 @@ const Timer = ({ duration, onTimeUp }) => {
       });
     }, 1000);
 
-    return () => clearInterval(timer); // Clean up the interval on unmount
+    return () => clearInterval(timer);
   }, [duration, onTimeUp]);
 
-  // Format time in HH:MM:SS format with labels
   const formatTime = time => {
     const hours = Math.floor(time / 3600);
     const minutes = Math.floor((time % 3600) / 60);

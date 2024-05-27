@@ -7,12 +7,11 @@ function AdminPassword() {
   const [oldPassword, setOldPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmNewPassword, setConfirmNewPassword] = useState('');
-  const [username, setUsername] = useState(''); // Add state for username
+  const [username, setUsername] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Validate passwords
-    if (!oldPassword || !newPassword || !confirmNewPassword || !username) { // Include username in validation
+    if (!oldPassword || !newPassword || !confirmNewPassword || !username) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -29,16 +28,14 @@ function AdminPassword() {
       return;
     }
 
-    // Prepare data to send to API endpoint
     const data = {
       oldPassword,
       newPassword,
-      username // Include username in the data
+      username
     };
 
     try {
-      // Make API call to update password
-      const response = await fetch('/update_password', {
+      const response = await fetch('https://hiresynth-backend.onrender.com/update_password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -51,20 +48,17 @@ function AdminPassword() {
         throw new Error(errorMessage.message);
       }
 
-      // Reset form fields
       setUsername('')
       setOldPassword('');
       setNewPassword('');
       setConfirmNewPassword('');
 
-      // Show success message
       Swal.fire({
         icon: 'success',
         title: 'Success!',
         text: 'Password changed successfully!'
       });
     } catch (error) {
-      // Show error message
       Swal.fire({
         icon: 'error',
         title: 'Error',

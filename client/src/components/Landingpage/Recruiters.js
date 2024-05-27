@@ -25,30 +25,30 @@ function Recruiters() {
             name: "Harijeet M. Siller",
             icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
           },
-          {
-            cover: "https://media.istockphoto.com/id/1481851563/photo/smiling-woman-walking-outdoors-on-city-street-looking-behind.webp?b=1&s=170667a&w=0&k=20&c=uB75v9MVxBHNDvKzlcCguIfJsnCNcuU9w9QBgxmrKBE=", // Replace with your image URL
-            address: "Sydney, Australia",
-            name: "Anna K. Young",
-            icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
-          },
+          // {
+          //   cover: "https://media.istockphoto.com/id/1481851563/photo/smiling-woman-walking-outdoors-on-city-street-looking-behind.webp?b=1&s=170667a&w=0&k=20&c=uB75v9MVxBHNDvKzlcCguIfJsnCNcuU9w9QBgxmrKBE=", // Replace with your image URL
+          //   address: "Sydney, Australia",
+          //   name: "Anna K. Young",
+          //   icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
+          // },
           {
             cover: "https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.webp?b=1&s=170667a&w=0&k=20&c=lrHSjzuqKIAC76-vpOhzR7pRsP38DGPWt7x7SOFbm0Q=",
             address: "New York City, United States",
             name: "Liam Smith",
             icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
           },
-        //   {
-        //     cover: "https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600",
-        //     address: "Mumbai, India",
-        //     name: "Noah Brown",
-        //     icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
-        //   },
-          {
-            cover: "https://i.pinimg.com/236x/44/de/65/44de65cb7fb5556a7ac91b69358df424.jpg",
-            address: "Moscow, Russia",
-            name: "Sargam S. Singh",
-            icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
-          },
+          // {
+          //   cover: "https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600",
+          //   address: "Mumbai, India",
+          //   name: "Noah Brown",
+          //   icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
+          // },
+          // {
+          //   cover: "https://i.pinimg.com/236x/44/de/65/44de65cb7fb5556a7ac91b69358df424.jpg",
+          //   address: "Moscow, Russia",
+          //   name: "Sargam S. Singh",
+          //   icon: [faFacebookF, faLinkedin, faTwitter, faInstagram],
+          // },
           {
             cover: "https://media.istockphoto.com/id/1488344026/photo/woman-portrait-and-laptop-in-office-planning-legal-consulting-or-policy-review-feedback-in.webp?b=1&s=170667a&w=0&k=20&c=mCBpSQK3DnXxm62WdR3POw0HmQ7oXp-anfxbZ3GnL2c=", // Replace with your image URL
             address: "Rio de Janeiro, Brazil",

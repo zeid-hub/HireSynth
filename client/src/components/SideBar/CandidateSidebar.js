@@ -41,7 +41,7 @@ function CandidateSidebar (){
             <img src={Candidate} alt='candidate' className='interviewee-image'/>
             <div className="interviewee-links">
                 <NavLink to="/interviewee-dashboard"><FontAwesomeIcon icon={faTachometerAlt} className="cand-icon-dashoard"/> DASHBOARD</NavLink>
-                <NavLink to="/candidate-result"><FontAwesomeIcon icon={faUserCheck} className="cand-icon-result"/> CANDIDATE RESULT</NavLink>
+                {/* <NavLink to="/candidate-result"><FontAwesomeIcon icon={faUserCheck} className="cand-icon-result"/> CANDIDATE RESULT</NavLink> */}
                 <NavLink to="/candidate-password"><FontAwesomeIcon icon={faKey} className="cand-icon-password"/> CHANGE PASSWORD</NavLink>
                 <NavLink to="/packages"> <FontAwesomeIcon icon={faStar} className="cand-icon-upgrade"/> UPGRADE</NavLink>
                 <button className='interviewee-button' onClick={handleLogout}><FontAwesomeIcon icon={faSignOutAlt} className="cand-icon-logout"/> LOGOUT</button>

@@ -27,7 +27,7 @@
   .content-mtop-grid3 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 100px;
+    gap: 50px;
   }
   
   .recruiter-box {
@@ -39,7 +39,8 @@
     transition: 0.5s;
     position: relative;
     overflow: hidden;
-    width: 300px;
+    /* width: 380px; */
+    width: 100%;
   }
   
   .recruiter-box:hover {
@@ -74,11 +75,11 @@
   }
   
   .rec-image {
-    width: 350px;
+    width: 320px;
     height: 200px;
     border-radius: 15px;
     margin-top: -30px;
-    margin-left: -45px;
+    margin-left: -55px;
     margin-right: 50px;
   }
   
@@ -104,7 +105,7 @@
   
   .location-icon {
     color: #0fe43d;
-    margin-right: 8px;
+    margin-right: 90px;
     background-color: #faebeb;
   }
   

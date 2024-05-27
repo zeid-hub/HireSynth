@@ -80,7 +80,7 @@ function PaymentForm(){
                         onChange={(e) => setCardNumber(e.target.value)}
                         /><br/>
                         <div className="div-expiration-cvv">
-                            <label className="label-label"> <FontAwesomeIcon icon={faCalendarAlt} className="payment-icon" /> Expiration Date :</label>
+                            <label className="label-label"> <FontAwesomeIcon icon={faCalendarAlt} className="payment-icon" /> Expiration:</label>
                             <input
                             type="text"
                             className="expiration-date"
@@ -88,7 +88,7 @@ function PaymentForm(){
                             value={expirationDate}
                             onChange={(e) => setExpirationDate(e.target.value)}
                             /><br/>
-                            <label className="label-label"> <FontAwesomeIcon icon={faQuestionCircle} className="payment-icon" /> CVV :</label>
+                            <label className="cvv-label-label"> <FontAwesomeIcon icon={faQuestionCircle} className="payment-icon" /> CVV :</label>
                             <input
                             type="text"
                             className="cvv"

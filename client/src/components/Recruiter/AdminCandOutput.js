@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./AdminCandOutput.css";
+import AdminSidebar from "../SideBar/AdminSidebar";
 
 function AdminCandOutput() {
     const [codeResults, setCodeResults] = useState([]);
@@ -55,7 +56,35 @@ function AdminCandOutput() {
 
     return (
         <div className="div-admin-cand-output">
-            <h2 className="admin-cand-result">All Code Results</h2>
+            <div className="div-adminsidebar-output">
+                <AdminSidebar/>
+            </div>
+            <div className="admin-cand-main">
+                <h2 className="admin-cand-result">All Code Results</h2>
+                {loading ? (
+                    <p>Loading...</p>
+                ) : (
+                    codeResults.map((result) => (
+                        <div key={result.id}>
+                            <ul className="unordered-admin-cand">
+                                <li className="ordered-admin-cand">
+                                    <strong className="output-question">Question:</strong>{" "}
+                                    {result.question}
+                                    <br />
+                                    <strong className="output-user-code">User Code:</strong>{" "}
+                                    {result.user_code} <br />
+                                    <strong className="output-code-output">Code Output:</strong>{" "}
+                                    {result.code_output} <br />
+                                    <strong className="output-language">Language:</strong>{" "}
+                                    {result.language} <br />
+                                    <hr></hr>
+                                </li>
+                            </ul>
+                        </div>
+                    ))
+                )}
+                </div>
+            {/* <h2 className="admin-cand-result">All Code Results</h2>
             {loading ? (
                 <p>Loading...</p>
             ) : (
@@ -72,27 +101,12 @@ function AdminCandOutput() {
                                 {result.code_output} <br />
                                 <strong className="output-language">Language:</strong>{" "}
                                 {result.language} <br />
-                                <hr />
+                                <hr></hr>
                             </li>
                         </ul>
-                        <form onSubmit={(e) => handleSubmitFeedback(e, result.id)}>
-                            <div className="div-feedback">
-                                <label className="admin-feedback">
-                                    Feedback:
-                                    <textarea
-                                        value={feedbacks[result.id] || ""}
-                                        onChange={(e) => handleFeedbackChange(e, result.id)}
-                                        className="feedback-textarea"
-                                    />
-                                </label>
-                            </div>
-                            <button type="submit" className="submit-feedback-btn">
-                                Submit Feedback
-                            </button>
-                        </form>
                     </div>
                 ))
-            )}
+            )} */}
         </div>
     );
 }

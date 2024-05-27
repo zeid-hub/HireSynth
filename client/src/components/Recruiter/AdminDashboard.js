@@ -123,7 +123,7 @@ function DashboardSummary() {
         <div className="dashboard-summary">
             <div className="summary-item">
                 <div className="h3-par">
-                    <h3 className="dashboard-h3">Total No. Of Questions: </h3>
+                    <h3 className="dashboard-h3">Total Questions: </h3>
                     <p className="dashboard-par">{questionCount}</p>
                 </div>
                 <canvas id="questionChart" className="chart"></canvas>

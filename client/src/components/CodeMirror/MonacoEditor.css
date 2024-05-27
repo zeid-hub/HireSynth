@@ -1,6 +1,6 @@
   .main-code-mirror-container {
     display: flex;
-    height: 700px;
+    height: 750px;
     margin: 0 auto;
     padding: 20px;
     background-color: #2e2a2a;
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 190px; /* Adjust margin as needed */
-    height: 500px;
+    height: 537px;
     border-radius: 20px;
     background-color: #2e2a2a;
   }
@@ -87,7 +87,6 @@
     flex: 1;
     margin-bottom: 16px;
     max-width: 600px;
-    height: 537px;
   }
   
   .submit-button {
@@ -111,9 +110,9 @@
   background-color: #2e2a2a;
   display: flex;
   width: 100%;
-  height: 537px;
 }
 
 .code-mirror-container .CodeMirror textarea {
   border-radius: 10px;
+  /* height: 500px; */
 }

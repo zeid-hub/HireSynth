@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
 }
 
 .login-container {
@@ -16,6 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full viewport height */
+  margin-top: 50px;
 }
 
 .login-description {
@@ -57,6 +58,7 @@ body {
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
+  margin-left: 40px;
 }
 
 .email,
@@ -88,7 +90,8 @@ body {
   transition: background-color 0.3s ease;
   font-size: 18px;
   margin-top: 20px;
-  outline: none; /* Remove blue outline on focus */
+  outline: none;
+  border-radius: 10px;
 }
 
 .login-button:hover {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './IntervieweeAssessment.css';
 import CandidateSidebar from '../SideBar/CandidateSidebar';
+import { gsap } from 'gsap/gsap-core';
 
 function IntervieweeAssessments() {
   const [questions, setQuestions] = useState([]);
@@ -52,6 +53,28 @@ function IntervieweeAssessments() {
   };
 
   const complexityOptions = ['Easy', 'Medium', 'Hard'];
+
+  useEffect(() => {
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 });
+    tl.from(".welcome-text", {
+      opacity: 0,
+      y: 100,
+      duration: 1,
+      ease: "power3.out",
+    })
+      .from(".welcome-btn", {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        ease: "power3.out",
+      })
+      .from(".welcome-image", {
+        opacity: 0,
+        scale: 0.5,
+        duration: 1,
+        ease: "power3.out",
+      });
+  }, []);
 
   return (
     <div className="interviewee-container">
@@ -167,9 +190,14 @@ function IntervieweeAssessments() {
               </div>
             )}
           </div>
-          <div>
-            <h2 className="past-assessment-h2">PAST ASSESSMENTS</h2>
-          </div>
+          <div className="welcome-container">
+          <div className="welcome-text">Welcome Coder</div>
+          <img
+            className="welcome-image"
+            src='https://media.istockphoto.com/id/1447084046/photo/woman-cyber-security-and-iot-with-technology-for-team-meeting-or-programming-working-at-night.webp?b=1&s=170667a&w=0&k=20&c=frOxjzYU6MWG6VAtPnBu4Jsnq1slKQEyURsGCeNYVKs='
+            alt="Welcome"
+          />
+        </div>
         </div>
       </div>
     </div>

@@ -58,7 +58,7 @@ function Companies (){
         <div className="company-outer-container">
             <div className='company-container'>
                 <h1 className="company-h1">Explore By Location</h1>
-                <p className="company-par1">At HiResynth, we're proud to be the trusted choice for recruitment by numerous global companies. With offices spanning across various corners of the world, our platform connects talent with opportunities worldwide. Explore the pictures below to discover the locations where these esteemed companies reside</p>
+                <p className="company-par1">At HireSynth, we're proud to be the trusted choice for recruitment by numerous global companies. With offices spanning across various corners of the world, our platform connects talent with opportunities worldwide. Explore the pictures below to discover the locations where these esteemed companies reside</p>
                 <div className='company-grid3-mtop'>
                     {location.map((item, index) => (
                     <div className='company-box' key={index}>

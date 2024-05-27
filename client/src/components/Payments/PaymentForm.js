@@ -1,13 +1,3 @@
-// import React from "react";
-// import "./PaymentForm.css"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCreditCard, faCalendarAlt, faQuestionCircle, faGlobe, faCity } from "@fortawesome/free-solid-svg-icons";
-
-// function PaymentForm(){
-//     return(
-
-
-
 import React, { useState } from "react";
 import "./PaymentForm.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +17,7 @@ function PaymentForm(){
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('/credit_cards', {
+            const response = await fetch('https://hiresynth-backend.onrender.com/credit_cards', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

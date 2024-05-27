@@ -19,7 +19,7 @@ function Questions() {
 
     const fetchChallenges = async () => {
         try {
-            const response = await fetch('/code_challenges');
+            const response = await fetch('https://hiresynth-backend.onrender.com/code_challenges');
             if (!response.ok) {
                 throw new Error('Failed to fetch challenges');
             }
@@ -33,7 +33,7 @@ function Questions() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/code_challenges', {
+            const response = await fetch('https://hiresynth-backend.onrender.com/code_challenges', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ function Questions() {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`/code_challenges/${id}`, {
+            const response = await fetch(`https://hiresynth-backend.onrender.com/code_challenges/${id}`, {
                 method: 'DELETE'
             });
             if (!response.ok) {
@@ -169,7 +169,6 @@ function Questions() {
                                         </button>
                                         {selectedChallenge === challenge && (
                                             <div className="challenge-details">
-                                                {/* <h4 className="challenge-language">LANGUAGE: {challenge.languages}</h4> */}
                                                 <p className="challenge-description">QUESTION :{challenge.description}</p>
                                                 <h6 className="challenge-answer">ANSWER :{challenge.correct_answer}</h6>
                                                 <div className="edit-delete-button">

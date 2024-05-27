@@ -1,8 +1,12 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import './product.css';
 
 function ProDuct() {
+  const handleDemoButtonClick = () => {
+    // Handle the demo button click event here
+    console.log('Demo button clicked');
+  };
+
   return (
     <div>
       <div className="header">
@@ -94,13 +98,11 @@ function ProDuct() {
         <div className="card">
           <h2><span className="blue-text">User-Friendly Interface:</span></h2>
           <p>Our platform features a user-friendly interface built with ReactJS for the frontend, ensuring a seamless experience for users.</p>
-
         </div>
 
         <div className="card">
           <h2><span className="blue-text">Scalability and Performance:</span></h2>
           <p>Powered by Python (Flask) for the backend, our platform offers scalability and performance to handle large-scale assessments efficiently.</p>
-          
         </div>
       </div>
     </div>

@@ -39,7 +39,7 @@ function App() {
         <Route path="/payments" element={<PaymentForm />} />
         <Route path="/admin-cand-output" element={<AdminCandOutput />} />
         <Route path="/my-scores" element={<MyScores />} />
-        <Route path="/about us " element={<AboutUs />} />
+        <Route path="/about us" element={<AboutUs />} />
       </Routes>
     </div>
   );

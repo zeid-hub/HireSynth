@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { TECarousel, TECarouselItem } from "tw-elements-react";
+import { useNavigate } from "react-router-dom";
 
 import './AboutUs.css';
 import './index.css';
@@ -8,7 +9,7 @@ import './index.css';
 // import fourth from "/home/njesh/HireSynth/client/src/components/Assets/eliott-reyna-iO2d-KYp5JU-unsplash.jpg";
 
 const Introduction = () => {
- 
+  const navigate = useNavigate();
   return ( 
          <>
          <div className=" h-1/4 relative" >
@@ -28,7 +29,7 @@ const Introduction = () => {
               <p>
               Empowering organizations to identify top tech talent through skills-based assessments, streamlining the hiring process and ensuring the best fit.
               </p>
-              <button className="bg-brandPrimary text-white font-bold py-2 px-4 rounded hover:bg-neutralDGrey transition-all duration-300 hover:translate-y-4">Get Started</button>
+              <button className="bg-brandPrimary text-white font-bold py-2 px-4 rounded hover:bg-neutralDGrey transition-all duration-300 hover:translate-y-4" onClick={() => navigate("/signup")}>Get Started</button>
             </div>
           </TECarouselItem>
           <TECarouselItem
@@ -44,7 +45,7 @@ const Introduction = () => {
               <h5 className="text-xl">Innovation: </h5>
               <p>   We are constantly striving to improve and evolve the recruitment landscape through cutting-edge technology and data-driven insights.
               </p>
-              <button className="bg-brandPrimary text-white font-bold py-2 px-4 rounded hover:bg-neutralDGrey transition-all duration-300 hover:translate-y-4">Get Started</button>
+              <button className="bg-brandPrimary text-white font-bold py-2 px-4 rounded hover:bg-neutralDGrey transition-all duration-300 hover:translate-y-4" onClick={() => navigate("/signup")}>Get Started</button>
             </div>
           </TECarouselItem>
           <TECarouselItem
@@ -61,7 +62,7 @@ const Introduction = () => {
               <p>
               HireSynth provides clear assessment criteria and results.
               </p>
-              <button className="bg-brandPrimary text-white font-bold py-2 px-4 rounded hover:bg-neutralDGrey transition-all duration-300 hover:translate-y-4">Get Started</button>
+              <button className="bg-brandPrimary text-white font-bold py-2 px-4 rounded hover:bg-neutralDGrey transition-all duration-300 hover:translate-y-4" onClick={() => navigate("/signup")}>Get Started</button>
             </div>
           </TECarouselItem>
         </div>

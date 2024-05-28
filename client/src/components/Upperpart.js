@@ -1,6 +1,6 @@
 import React from 'react';
-import './About.css';
-import '../index.css'
+import './AboutUs.css';
+import './index.css'
 import { useCollapse } from 'react-collapsed';
 
 function Upperpart() {
@@ -11,8 +11,8 @@ function Upperpart() {
       className="upper bg-cover bg-center w-full h-1/3 relative" 
       style={{ backgroundImage: 'url(/7d7063b9688958c7148365a9960c4b9f.jpg)' }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="container mx-auto px-4 py-16 relative z-10 flex flex-col justify-center items-start text-white h-full">
+     
+      <div className="mx-auto px-4 py-16 relative z-10 flex flex-col justify-center items-start text-white h-full">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-bold text-neutralDGrey">Welcome to HireSynth</h1>
         <p className="text-lg md:text-xl lg:text-2xl mb-8 text-neutralDGrey">Your comprehensive platform for technical interviews</p>
         <div>
